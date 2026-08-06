@@ -1,0 +1,12 @@
+{
+  "domain": "google_cloud_stt_v2",
+  "name": "Google Cloud Speech-to-Text V2",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/amitra93/ha-google-cloud-stt-streaming",
+  "integration_type": "service",
+  "iot_class": "cloud_push",
+  "requirements": ["google-cloud-speech>=2.21.0"],
+  "version": "1.0.0"
+}

@@ -1,0 +1,50 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Google Cloud Speech-to-Text V2 Credentials",
+        "description": "Upload your Google Cloud Service Account JSON key file or paste the JSON content below.",
+        "data": {
+          "uploaded_key_file": "Service Account Key JSON File",
+          "raw_key_json": "Or Paste Service Account Key JSON Content"
+        }
+      },
+      "config": {
+        "title": "Configure GCP STT V2 Model & Region",
+        "description": "Select the GCP Region and STT V2 Model. Note: Chirp models require a regional location (e.g. us-central1).",
+        "data": {
+          "region": "GCP Region",
+          "model": "STT Model",
+          "recognizer": "Recognizer ID (default: _)",
+          "phrase_hints": "Custom Phrase Hints (comma-separated)",
+          "punctuation": "Automatic Punctuation",
+          "speech_start_timeout": "VAD Speech Start Timeout (seconds)",
+          "speech_end_timeout": "VAD Speech End Timeout / Quiet Room Silence (seconds)"
+        }
+      }
+    },
+    "error": {
+      "invalid_json_file": "The uploaded file is not a valid JSON file.",
+      "invalid_json_format": "The provided text is not valid JSON.",
+      "invalid_service_account_json": "The Service Account JSON is missing required fields (project_id or private_key)."
+    },
+    "abort": {
+      "already_configured": "Google Cloud Speech-to-Text V2 is already configured for this project."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "GCP STT V2 Options",
+        "description": "Update Recognizer ID, phrase hints, punctuation, and VAD quiet room timeouts.",
+        "data": {
+          "recognizer": "Recognizer ID (default: _)",
+          "phrase_hints": "Custom Phrase Hints (comma-separated)",
+          "punctuation": "Automatic Punctuation",
+          "speech_start_timeout": "VAD Speech Start Timeout (seconds)",
+          "speech_end_timeout": "VAD Speech End Timeout / Quiet Room Silence (seconds)"
+        }
+      }
+    }
+  }
+}
